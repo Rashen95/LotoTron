@@ -1,6 +1,5 @@
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashSet;
 
 public class Menu {
     public void startMenu() throws FileNotFoundException {
@@ -26,7 +25,8 @@ public class Menu {
                 }
                 case "2" -> {
                     flag = true;
-                    System.out.println(2);
+                    new ToyAdder().add(Toys);
+                    mainMenu();
                 }
                 case "3" -> {
                     flag = true;
