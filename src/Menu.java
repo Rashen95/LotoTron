@@ -9,7 +9,7 @@ public class Menu {
     }
 
     public void mainMenu() throws FileNotFoundException {
-        ArrayList<Toy> Toys= new DBreader().read();
+        ArrayList<Toy> Toys = new DBreader().read();
         UInterfaceMess UI = new UInterfaceMess();
         boolean flag = false;
         while (!flag) {
@@ -18,7 +18,7 @@ public class Menu {
             switch (change) {
                 case "1" -> {
                     flag = true;
-                    for (Toy t: Toys) {
+                    for (Toy t : Toys) {
                         System.out.println(t.getInformation());
                     }
                     mainMenu();

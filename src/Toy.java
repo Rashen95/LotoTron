@@ -10,17 +10,30 @@ public class Toy {
                 this.quantity, this.chance);
     }
 
-    public Toy (int arg_id, String arg_name, int arg_quantity, int arg_chance){
+    public Toy(int arg_id, String arg_name, int arg_quantity, int arg_chance) {
         this.id = arg_id;
         this.name = arg_name;
         this.quantity = arg_quantity;
-        this. chance = arg_chance;
+        this.chance = arg_chance;
     }
 
-    public void setQuantity(){
+    public void setQuantity() {
         this.quantity -= 1;
     }
+
     public int getQuantity() {
         return quantity;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getChance() {
+        return chance;
+    }
+
+    public String getName() {
+        return name;
     }
 }

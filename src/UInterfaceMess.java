@@ -8,7 +8,6 @@ public class UInterfaceMess {
             2. Добавить игрушек в лототрон
             3. Разыграть игрушку
             4. Закончить игру в лототрон""";
-    private static final String goodbye = "\nМы будем ждать вас вновь";
     private static final String exitGame = """
             \n<><><><><><><><><><><><>
             Завершаю работу лототрона
