@@ -5,8 +5,8 @@ public class Toy {
     private final int chance;
 
     public String getInformation() {
-        return String.format("<><><><><><><><><><><><><><><><><><><><><><>\nID:%d  Name:%s  Quantity:%d  " +
-                        "DropChance(in percentages):%d", id, this.name,
+        return String.format("<><><><><><><><><><><><><><><><><><><><><><>\nID:%d  Имя:%s  Количество:%d  " +
+                        "Шанс выпадения(в процентах):%d", id, this.name,
                 this.quantity, this.chance);
     }
 

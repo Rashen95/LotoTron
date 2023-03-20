@@ -51,7 +51,7 @@ public class ToyAdder {
                 System.out.println(UI.getChanceError());
             }
         }
-        
+
     }
 
     public static boolean isNumeric(String str) {
