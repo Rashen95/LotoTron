@@ -48,7 +48,13 @@ public class ToyAdder {
                 System.out.println(UI.getChanceError());
             }
         }
-        Toys.add(new Toy(Toys.size() + 1, name, quantity, chance));
+        if (Toys.isEmpty()) {
+            Toys.add(new Toy(1, name, quantity, chance));
+        }
+        else {
+            Toys.add(new Toy(Toys.get(Toys.size()-1).getId() + 1, name, quantity, chance));
+        }
+
         try (FileWriter writer = new FileWriter("db.txt", false)) {
             int count = 0;
             while (count < Toys.size()) {

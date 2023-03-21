@@ -17,7 +17,7 @@ public class Toy {
         this.chance = arg_chance;
     }
 
-    public void setQuantity() {
+    public void downQuantity() {
         this.quantity -= 1;
     }
 

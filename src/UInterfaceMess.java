@@ -31,6 +31,10 @@ public class UInterfaceMess {
             \n<><><><><><><><><><><><>
             Имя не может быть пустым
             <><><><><><><><><><><><>""";
+    private static final String emptyLototron = """
+            \n<><><><><><><><><><><><><><><><><><><>
+            Лототрон пуст, нужно добавить игрушек
+            <><><><><><><><><><><><><><><><><><><>""";
 
     public String getGreetings() {
         return greetings;
@@ -70,5 +74,14 @@ public class UInterfaceMess {
 
     public String getNameError() {
         return nameError;
+    }
+    public String winMess(String s) {
+        return String.format("""
+                \n<><><><><><><><><><><><><><><><><><>
+                Вы выиграли игрушку %s, поздравляем!
+                <><><><><><><><><><><><><><><><><><>""", s);
+    }
+    public String getEmptyLototron() {
+        return emptyLototron;
     }
 }

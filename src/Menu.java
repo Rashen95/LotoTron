@@ -17,11 +17,18 @@ public class Menu {
             String change = new UserInput().input();
             switch (change) {
                 case "1" -> {
-                    flag = true;
-                    for (Toy t : Toys) {
-                        System.out.println(t.getInformation());
+                    if (Toys.isEmpty()) {
+                        flag = true;
+                        System.out.println(UI.getEmptyLototron());
+                        mainMenu();
                     }
-                    mainMenu();
+                    else {
+                        flag = true;
+                        for (Toy t : Toys) {
+                            System.out.println(t.getInformation());
+                        }
+                        mainMenu();
+                    }
                 }
                 case "2" -> {
                     flag = true;
@@ -29,8 +36,13 @@ public class Menu {
                     mainMenu();
                 }
                 case "3" -> {
-                    flag = true;
-                    System.out.println(3);
+                    if (Toys.isEmpty()) {
+                        System.out.println(UI.getEmptyLototron());
+                    }
+                    else {
+                        flag = true;
+                        new DrowToy().drow(Toys);
+                    }
                 }
                 case "4" -> {
                     flag = true;
